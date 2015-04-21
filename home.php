@@ -12,8 +12,8 @@
    <!-- <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 <!-- end typekit -->
 <title>DomFolio</title>
-<link rel="shortcut icon" href="/dosmith/page/images/favicon.ico">
-<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+<link rel="shortcut icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
 <link href="/dosmith/page/site_packages/prettify.css"  type="text/css" rel="stylesheet" />
 <link href="/dosmith/page/site_packages/prettify_custom.css"  type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="/dosmith/page/external/jquery/prettify.js" ></script>
@@ -85,12 +85,13 @@ ga('send', 'pageview');
 
 <img style="float: right; padding: 0 1px" src="/dosmith/page/images/GitHubAvatar.png" alt="" width="200" />
 
-<b>Contact</b><br />
-Dominic Smith<br />
-dosmith@cern.ch<br />
-(+44)75 95269377<directlink id="dl_8744707" link="http://https://dosmith.web.cern.ch/dosmith/page/home.php/"></directlink></div></div>
-
-<br />
+<b>Contact</b><br>
+Dominic Smith<br>
+dosmith@cern.ch<br>
+(+44)75 95269377<br>
+<ul style="list-style-image: url(/dosmith/page/images/skypefavicon.ico);">
+<li> domsmiff </li>
+</ul>
 
 <div class="clear">
 </div>
