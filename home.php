@@ -11,7 +11,7 @@
 <!-- <script type="text/javascript" src="//use.typekit.net/jfj5gcv.js"></script> -->
    <!-- <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 <!-- end typekit -->
-<title>DomFolio</title>
+<title>Dom Smith</title>
 <link rel="shortcut icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
 <link href="/dosmith/page/site_packages/prettify.css"  type="text/css" rel="stylesheet" />
@@ -29,21 +29,16 @@ ga('send', 'pageview');
 </script>
 </head>
 <body onload="prettyPrint()">
-<div class="container">
+  <div class="container">
   <div class="span-24 last">
-    <div id="header">
-      <div class="span-22">
-<h1><a href="https://github.com/dsmiff" >DomsFolio</a> </h1>
-<div class="description">Dom Smith</div>
-</div>
-<div class="span-2 append-bottom last">
-<i class="el el-bookmark el-1x" style="color:#0b4465; vertical-align:top;"></i>
-<i class="el el-book el-2x" style="color:#0b4465; vertical-align:top;"></i>
-</div>
-    </div><!--header--> 
+  <div id="header">
+  <img id="image" src="/dosmith/page/images/evening_in_edinburgh-wallpaper-2560x1600.jpg"/ style="width:300px;height=100px">
+  <h1 id="Title"><a href="https://github.com/dsmiff" >DomsFolio</a> </h1>
+  <div class="description">Dom Smith</div>
   </div>
-</div><!--container -->
-
+  </div>
+  </div>
+  
 <div id="subheader">
 <div class="container">
 <div class="span-24 last">
@@ -58,8 +53,10 @@ ga('send', 'pageview');
   <a href="http://l1ts-gct.cms:2974/urn:xdaq-application:service=hyperdaq"><i class="el el-lock" style="font-size:0.6em"></i>&nbsp;Trigger Commissioning & GCT</a>
   <span> // </span>
   <dd> <a href="https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWBTriggerContacts"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Contacts</a> </dd>
+  <dd> <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/GCTIdiotsGuide"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Idiots Guide</a> </dd>
   <a href="https://github.com/dsmiff/cmssw-old/tree/tpinspect"><i class="el el-lock" style="font-size:0.6em"></i>&nbsp;HCal DPG Trigger</a>
-  <span> // </span>
+  <span> // </span/>
+  <dd> <a href="/dosmith/page/hcal_plots/Hcalplots.html"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Plots</a> </dd>
   <dd> <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/HcalDPGTrigger"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; TWiki</a> </dd>
   <a href="https://github.com/InvisibleHiggsUK"><i class="el el-lock" style="font-size:0.6em"></i>&nbsp;Invisible Higgs</a>
   <span> // </span>
@@ -99,7 +96,7 @@ dosmith@cern.ch<br>
 </div>
 </div><!--torso--> 
 <div class="span-24 last"> 
-<div id="footer"> 											    &copy;2015 Dominic Smith
+<div id="footer"> &copy;2015 Dominic Smith
 </div><!--footer--> 
 </div>
 </div><!--container -->
