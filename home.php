@@ -46,7 +46,7 @@ ga('send', 'pageview');
   <ul>
   <a href="https://github.com/dsmiff/cmg-cmssw-private"><i class="el el-lock" style="font-size:0.6em"></i>&nbsp;SUSY &alpha;<sub>T</sub>
   <span> // </span>
-  <dd> <a href="/dosmith/page/plots"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Plots</a> </dd>
+  <dd> <a href="/dosmith/page/bootstrap/plots.html"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Plots</a> </dd>
   <dd> <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/AlphaT"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; TWiki</a> </dd>
   <dd> <a href="https://github.com/CMSRA1/"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; GitHub</a> </dd>
   </a>
