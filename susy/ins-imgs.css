@@ -3,6 +3,7 @@ ul.ins-imgs {
 }
 
 li.ins-imgs-li {
+    display: inline-block;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
