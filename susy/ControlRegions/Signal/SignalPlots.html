@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SUSY AlphaT</title>
+    <link rel="shortcut icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+
+    
+    <!-- Bootstrap core CSS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">     
+
+    <!-- Custom styles for this template -->
+    <link href="/dosmith/page/susy/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--  <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">SUSY AlphaT</a>
+	</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="#">Dashboard</a></li>
+	    <li><a href="#">Settings</a></li>
+	    <li><a href="/dosmith/page/home.php">Profile</a></li>
+	    <li><a href="#">Help</a></li>
+	  </ul>
+	  <form class="navbar-form navbar-right">
+	    <input type="text" class="form-control" placeholder="Search...">
+	  </form>
+	</div>
+      </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+      <div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+	  <ul class="nav nav-pills nav-stacked">
+	    <li><a href="#Overview">Overview <span class="sr-only">(current)</span></a></li>
+	    <li><a href="https://github.com/CMSRA1/">GitHub</a></li>
+	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
+	  </ul>
+	  <ul class="nav nav-sidebar">
+	    <li><a href=""></a></li>
+	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation">XS corrections</a></li>
+	    
+	    <li>
+	      <div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		  Distributions
+		  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#Signal">Signal</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SingleMu/SingleMuPlots.html">Single Muon</a></li>
+		  
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleMu/DoubleMuPlots.html">Double Muon</a></li>
+
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePhoPlots.html">Single Photon</a></li>
+
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePlots.html">Single Electron</a></li>
+
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleEle/DoubleElePlots.html">Double Electron</a></li>
+		</ul>
+	      </div>
+	    </li>
+	    <li>
+	      <a href="#JetResolution">Jet Resolution</a>
+	    </li>
+
+	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts">My Framework</a></li>
+	    <li><a href="">PHYS14 Datasets</a></li>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	  </ul>
+	  <div>
+	    <h1>Dom Smith</h1>
+	    <p class="lead">University of Bristol</p>
+	    <p class="lead">Vrije Universiteit Brussel </p>
+	  </div>
+	</div>
+
+	
+<!-- Begin main body -->
+	
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+
+
+	  <!-- Overview -->
+	  <section id="Overview">
+	    <div class="page-head">
+	      <h1> Overview </h1>
+	      <p> A CERN extended site to host some of the distrubitions of the control samples </p>
+	    </div>
+	    <hr>
+	  </section>
+	  
+	  <!-- Basic Distributions
+	    ==========================-->
+	  <!-- Signal
+	       ========================-->
+	  <section id="Signal">
+	    <div class="page-head">
+	      <h1> Distributions </h1>
+	      <hr>
+	      <h1> Signal </h1>
+
+	    </div>
+	  </section>
+
+
+	  <p class="lead"><span id="greeting"></span> Here one find plots, plots and more plots</p>
+	  
+	  
+<!--
+          <div class="row placeholders">
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	      <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Placeholder">
+	      <h4>Signal</h4>
+	      <script src="ins-imgs-S.php"></script>
+	    </div>
+	  </div>
+-->
+
+
+<!-- End main body -->	    
+
+
+	  
+<!--
+	  <div class="row placeholders">
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	      <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+	      <h4>Label</h4>
+	      <span class="text-muted">Something else</span>
+	    </div>
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	      <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+	      <h4>Label</h4>
+	      <span class="text-muted">Something else</span>
+	    </div>
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	      <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+	      <h4>Label</h4>
+	      <span class="text-muted">Something else</span>
+	    </div>
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	      <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+	      <h4>Label</h4>
+	      <span class="text-muted">Something else</span>
+	    </div>
+	  </div>
+-->
+
+<!-- <h2 class="sub-header">PHYS14 Datasets</h2> -->
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+	     ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/widgets.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+	<script src="../../assets/js/vendor/holder.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	
+  </body>
+</html>
+
+
+
