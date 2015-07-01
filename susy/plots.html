@@ -50,7 +50,7 @@
 	    <li><a href="#">Dashboard</a></li>
 	    <li><a href="#">Settings</a></li>
 	    <li><a href="/dosmith/page/home.php">Profile</a></li>
-	    <li><a href="#">Help</a></li>
+	    <li><a href="#contact">Contact</a><li>
 	  </ul>
 	  <form class="navbar-form navbar-right">
 	    <input type="text" class="form-control" placeholder="Search...">
@@ -70,7 +70,7 @@
 	  </ul>
 	  <ul class="nav nav-sidebar">
 	    <li><a href=""></a></li>
-	    <li><a href="#BinnedMCSamplesXSInvestigation">XS corrections</a></li>
+	    <li><a href="#BinnedMCSamplesXSInvestigation">Cross section corrections</a></li>
 	    
 	    <li>
 	      <div class="dropdown">
@@ -82,18 +82,51 @@
 		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="ControlRegions/Signal/SignalPlots.html">Signal</a></li>
 		  <li role="presentation"><a role="menuitem" tabindex="-1" href="ControlRegions/SingleMu/SingleMuPlots.html">Single Muon</a></li>
 		  <li role="presentation"><a role="menuitem" tabindex="-1" href="ControlRegions/DoubleMu/DoubleMuPlots.html">Double Muon</a></li>
-		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="ControlRegions/SinglePho/SinglePhoPlots.html">Single Photon</a></li>
-		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#SingleEle">Single Electron</a></li>
-		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#DoubleEle">Double Electron</a></li>
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="ControlRegions/SinglePho/SinglePhoPlots.html">Single Photon</a></li>
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="ControlRegions/SingleEl/SingleElePlots.html">Single Electron</a></li>
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="ControlRegions/DoubleEl/DoubleElPlots.html">Double Electron</a></li>
 		</ul>
 	      </div>
 	    </li>
-	    <li>
-	      <a href="#JetResolution">Jet Resolution</a>
-	    </li>
 
-	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts">My Framework  </a> </li> 
-	    <li><a href="">PHYS14 Datasets</a></li>
+	   
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Jet Substructure
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1bbbb/SMS_T1bbbb.html">SMS_T1bbbb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1qqqq/SMS_T1qqqq.html">SMS_T1qqqq_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1tttt/SMS_T1tttt.html">SMS_T1tttt_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2bb/SMS_T2bb.html">SMS_T2bb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2qq/SMS_T2qq.html">SMS_T2qq</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2tt/SMS_T2tt.html">SMS_T2tt</a></li>
+                </ul>
+              </div>
+	      
+	      <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Key distributions
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/Signal/Signal.html">Signal</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleMu/SingleMu.html">SingleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleMu/DoubleMu.html">DoubleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleEle/SingleEle.html">SingleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleEle/DoubleEle.html">DoubleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SinglePhoton/SinglePhoton.html">SinglePhoton</a></li>
+                </ul>
+              </div>
+	    <li><a href="/dosmith/page/susy/Data/Data.html">Data</a></li>	      
+	      
+	    <li><a href="PHYS14/PHYS14.html">PHYS14 Datasets</a></li>
+	    <li><a href="#EGammaMuID">E/Gamma/Mu IDs </a></li>
+	    <li><a href="#TauID">Tau Reco & ID</a></li>
+	    <br>
+	    <br>
+	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts">My Framework </a> </li> 
 	    <br>
 	    <br>
 	    <br>
@@ -117,6 +150,13 @@
 	    <div class="page-head">
 	      <h1> Overview </h1>
 	      <p> A CERN extended site to host some of the ongoings of my work </p>
+	      <br>
+	      <h4> Links </h4>
+	      <li><a href="https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions15/13TeV/"> Certified Runs</a></li>
+	      <li><a href="http://cms.cern.ch/iCMS/analysisadmin/viewanalysis?id=1497&field=id&value=1497&name=Search%20for%20new%20physics%20in%20final%20states%20with%20jets%20and%20missing%20transverse%20momentum%20in%20sqrt(s)%20=%2013%20TeV%20pp%20collisions%20with%20the%20alpha_T%20variable"> CADI Link</a></li>
+	      <li><a href="https://github.com/CMSRA1">AlphaT GitHub</a></li>
+	      <li><a href="https://github.com/CMSRA1/AlphaProcess/tree/v0.0.x">miniAOD Production</a></li>
+	      
 	    </div>
 	    <hr>
 	  </section>
@@ -126,201 +166,121 @@
 	  <section id="BinnedMCSamplesXSInvestigation">
 	    <div class="page-head">
 	      <h1> Binned MC Cross Section Corrections </h1>
-	      <script src="ins-imgs-XS.php"></script>
+	      <p><b> PHYS14 samples </b></p>
 	      <p> Cross Section Validation Plots</p>
+	      <script src="ins-imgs-XS.php"></script>
+
 	    </div>
+	    <hr>
 	  </section>
 
-
-	  
-	  <!-- Basic Distributions
-	    ==========================-->
-
-
-
-	    <p class="lead"><span id="greeting"></span> Here one find plots, plots and more plots</p>
-
-	  
+	  <!-- E/Gamma/Mu ID 
+	       ====================================-->
+	  <section id="EGammaMuID">
+	    <div class="page-head">
+	      <h1>Electron, Photon and Muon IDs </h1>
+	    </div>
+	    <hr>
 	  </section>
 	  
 
 
+	  <!-- Tau ID 
+	       ====================================-->
+	  <section id="TauID">
+	    <div class="page-head">
+	      <h1>Tau Reconstruction & ID </h1>
+	      <a href="https://indico.cern.ch/event/390993/contribution/0/material/slides/0.pdf"> Approval TAU-14-001</a>
+	    </div>
+	    <hr>
+	  </section>
+
+
+	  
+	  
+	  <!-- Contact
+	       =========================-->
+<!--	    <p class="lead"><span id="greeting"></span> Here one find plots, plots and more plots</p> -->
+
+	    <section id="contact">
+	      <div class="page-heaer">
+		<h1> Contact </h1>
+	      </div>	      
+
+	      <div class="container">
+		<!-- Contacts -->
+		<div id="contacts">
+		  <div class="row">
+		    <!-- Alignment -->
+		    <!--		    <div class="col-sm-offset-3 col-sm-6"> -->
+		    <div class="col-lg-6">
+		      <!-- Form itself -->
+		      <form name="sentMessage" class="well" id="contactForm"  novalidate> 
+			<div class="control-group">
+			  <div class="controls">
+			    <input type="text" class="form-control"
+				   placeholder="Full Name" id="name" required
+				   data-validation-required-message="Please enter your name" />
+			    <p class="help-block"></p>
+			  </div>
+			</div>
+			<div class="control-group">
+			  <div class="controls">
+			    <input type="email" class="form-control" placeholder="Email"
+				   id="email" required
+				   data-validation-required-message="Please enter your email" />
+			  </div>
+			</div>
+
+			<div class="control-group">
+			  <div class="controls">
+			    <textarea rows="10" cols="100" class="form-control"
+				      placeholder="Message" id="message" required
+				      data-validation-required-message="Please enter your message" minlength="5"
+				      data-validation-minlength-message="Min 5 characters"
+				      maxlength="999" style="resize:none"></textarea>
+			  </div>
+			</div>
+			<div id="success"> </div> <!-- For success/fail messages -->
+			<button type="submit" name="submit" class="btn btn-primary pull-right">Send</button><br />
+		      </form>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	      		      
+	    </section>	    
+	    <!-- End Contact form
+		 =====================================-->
 	</div>
 <!-- End main body -->	    
 
 
 	  
-	  <!--
-	  <div class="row placeholders">
-	    <div class="col-xs-6 col-sm-3 placeholder">
-	      <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-	      <h4>Label</h4>
-	      <span class="text-muted">Something else</span>
-	    </div>
-	    <div class="col-xs-6 col-sm-3 placeholder">
-	      <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-	      <h4>Label</h4>
-	      <span class="text-muted">Something else</span>
-	    </div>
-	    <div class="col-xs-6 col-sm-3 placeholder">
-	      <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-	      <h4>Label</h4>
-	      <span class="text-muted">Something else</span>
-	    </div>
-	    <div class="col-xs-6 col-sm-3 placeholder">
-	      <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-	      <h4>Label</h4>
-	      <span class="text-muted">Something else</span>
-	    </div>
-	  </div>
-	  -->
-<!---
-	  <h2 class="sub-header">PHYS14 Datasets</h2>
-	  <div class="table-responsive">
-	    <table class="table table-striped">
-	      <thead>
-		<tr>
-		  <th>#</th>
-		  <th>Header</th>
-		  <th>Header</th>
-		  <th>Header</th>
-		  <th>Header</th>
-		</tr>
-	      </thead>
-	      <tbody>
-		<tr>
-		  <td>1,001</td>
-		  <td>Lorem</td>
-		  <td>ipsum</td>
-		  <td>dolor</td>
-		  <td>sit</td>
-		</tr>
-		<tr>
-		  <td>1,002</td>
-		  <td>amet</td>
-		  <td>consectetur</td>
-		  <td>adipiscing</td>
-		  <td>elit</td>
-		</tr>
-		<tr>
-		  <td>1,003</td>
-		  <td>Integer</td>
-		  <td>nec</td>
-		  <td>odio</td>
-		  <td>Praesent</td>
-		</tr>
-		<tr>
-		  <td>1,003</td>
-		  <td>libero</td>
-		  <td>Sed</td>
-		  <td>cursus</td>
-		  <td>ante</td>
-		</tr>
-		<tr>
-		  <td>1,004</td>
-		  <td>dapibus</td>
-		  <td>diam</td>
-		  <td>Sed</td>
-		  <td>nisi</td>
-		</tr>
-		<tr>
-		  <td>1,005</td>
-		  <td>Nulla</td>
-		  <td>quis</td>
-		  <td>sem</td>
-		  <td>at</td>
-		</tr>
-		<tr>
-		  <td>1,006</td>
-		  <td>nibh</td>
-		  <td>elementum</td>
-		  <td>imperdiet</td>
-		  <td>Duis</td>
-		</tr>
-		<tr>
-		  <td>1,007</td>
-		  <td>sagittis</td>
-		  <td>ipsum</td>
-		  <td>Praesent</td>
-		  <td>mauris</td>
-		</tr>
-		<tr>
-		  <td>1,008</td>
-		  <td>Fusce</td>
-		  <td>nec</td>
-		  <td>tellus</td>
-		  <td>sed</td>
-		</tr>
-		<tr>
-		  <td>1,009</td>
-		  <td>augue</td>
-		  <td>semper</td>
-		  <td>porta</td>
-		  <td>Mauris</td>
-		</tr>
-		<tr>
-		  <td>1,010</td>
-		  <td>massa</td>
-		  <td>Vestibulum</td>
-		  <td>lacinia</td>
-		  <td>arcu</td>
-		</tr>
-		<tr>
-		  <td>1,011</td>
-		  <td>eget</td>
-		  <td>nulla</td>
-		  <td>Class</td>
-		  <td>aptent</td>
-		</tr>
-		<tr>
-		  <td>1,012</td>
-		  <td>taciti</td>
-		  <td>sociosqu</td>
-		  <td>ad</td>
-		  <td>litora</td>
-		</tr>
-		<tr>
-		  <td>1,013</td>
-		  <td>torquent</td>
-		  <td>per</td>
-		  <td>conubia</td>
-		  <td>nostra</td>
-		</tr>
-		<tr>
-		  <td>1,014</td>
-		  <td>per</td>
-		  <td>inceptos</td>
-		  <td>himenaeos</td>
-		  <td>Curabitur</td>
-		</tr>
-		<tr>
-		  <td>1,015</td>
-		  <td>sodales</td>
-		  <td>ligula</td>
-		  <td>in</td>
-		  <td>libero</td>
-		</tr>
-	      </tbody>
-	    </table>
-	  </div>  -->
 
-        </div>
       </div>
     </div>
+</div>
 
-        <!-- Bootstrap core JavaScript
-	     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script type="text/javascript" src="js/widgets.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="../../assets/js/vendor/holder.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Bootstrap core JavaScript
+     ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="js/widgets.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/contact_me.js"></script>
 
-	
-  </body>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+
+</body>
 </html>
 
 
