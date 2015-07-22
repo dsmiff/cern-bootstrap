@@ -54,6 +54,7 @@ ga('send', 'pageview');
   <span> // </span>
   <dd> <a href="https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWBTriggerContacts"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Contacts</a> </dd>
   <dd> <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/GCTIdiotsGuide"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Idiots Guide</a> </dd>
+  <dd> <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/TriggerSupervisorNews"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Trigger Supervisor News</a> </dd>
   <a href="https://github.com/dsmiff/cmssw-old/tree/tpinspect"><i class="el el-lock" style="font-size:0.6em"></i>&nbsp;HCal DPG Trigger</a>
   <span> // </span/>
   <dd> <a href="/dosmith/page/hcal_plots/Hcalplots.html"> <i class="el el-lock" style="font-size:0.5em"></i>&nbsp; Plots</a> </dd>

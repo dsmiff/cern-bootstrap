@@ -10,7 +10,7 @@ li.ins-imgs-li {
 }
 
 div.ins-imgs-img img {
-    max-width: 350px;
+    max-width: 500px;
     outline: none;
     -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
