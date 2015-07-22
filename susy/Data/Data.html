@@ -19,6 +19,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="/dosmith/page/susy/css/styles.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
     <link href="/dosmith/page/susy/css/dashboard.css" rel="stylesheet">
@@ -71,8 +72,8 @@
 	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
 	  </ul>
 	  <ul class="nav nav-sidebar">
-	    <li><a href=""></a></li>
-	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation">XS corrections</a></li>
+	    <h3>AlphaT</h3>
+	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation">Cross Section corrections</a></li>
 	    
 	    <li>
 	      <!-- Dropdown
@@ -93,9 +94,7 @@
 	      </div>
 
 	    </li>
-	    <li>
-	      <a href="#JetResolution">Jet Resolution</a>
-	    </li>
+
 	    <li><a href="/dosmith/page/susy/JetSubstructure/JetSub.html">Jet Substructure</a></li>
 
 	      <div class="dropdown">
@@ -128,6 +127,7 @@
 	    <h1>Dom Smith</h1>
 	    <p class="lead">University of Bristol</p>
 	    <p class="lead">Vrije Universiteit Brussel </p>
+	    <a href="mailto:dosmith@cern.ch" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> </a>
 	  </div>
 	</div>
 
@@ -152,13 +152,39 @@
 	  <!-- Basic Distributions
 	    ==========================-->
 
-	  <!-- Double Muon
-	       =======================-->
+	  <section id="Data">
+	    <div class="row placeholders">
+	      <div class="col-sm-9 col-md-10 main">
+		<h1> Data </h1>
+		<h4> HTMHT 13 TeV B = 3.8 T </h4>
+		<p> Integrated luminosity: delivered= X (/pb) recorded= X (/pb) </p>
+		<script src="ins-imgs-HTMHT.php"></script>
+	      </div>
+	    </div>
+	  </section>
+
+
+	  <section id="Data">
+	    <div class="row placeholders">
+	      <div class="col-sm-9 col-md-10 main">
+		<h1> Data </h1>
+		<h4> Commissioning/Run2015B-PromptReco/ 13 TeV B = 3.8 T</h4>
+		<p> Integrated luminosity: delivered= X (/pb) recorded= X (/pb) </p>
+		<p><a href="https://cmsweb.cern.ch/das/request?input=dataset%3D%2FCommissioning%2Fdosmith-Commissioning_13TeV_Data-bf145b58410e99e121f74e672ef3eabe%2FUSER&instance=prod%2Fphys03"> DAS Entry </a></p>
+		<script src="ins-imgs-Comm.php"></script>
+	      </div>
+	    </div>
+	  </section>
+
+
+
 	  <section id="Data">
 	    <div class="row placeholders">
 	      <div class="col-sm-9 col-md-10 main">
 		<h1> Data </h1>
 		<h4> JetHT 13 TeV</h4>
+		<p> Integrated luminosity: delivered= 3.937 (/pb) recorded= 3.645 (/pb) </p>
+		<p><a href="https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fphys03&input=file+dataset%3D%2FJetHT%2Fdosmith-JetHT_13TeV_Data-bf145b58410e99e121f74e672ef3eabe%2FUSER"> DAS Entry </a></p>
 		<script src="ins-imgs-Data.php"></script>
 	      </div>
 	    </div>
