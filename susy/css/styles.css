@@ -1,0 +1,16 @@
+p.lead {
+    color: #333;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+}
+h3 { 
+    margin-left: 25px;
+    font-family: Lato, sans-serif;
+}
+div.dropdown {
+    margin-left: 15px;
+}
+p.footer {
+    font-family: Times New Roman, sans-serif;
+    font-size: 13px;
+}
