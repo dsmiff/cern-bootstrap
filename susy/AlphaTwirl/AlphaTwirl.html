@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SUSY AlphaT</title>
+    <link rel="shortcut icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+
+    
+    <!-- Bootstrap core CSS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">     
+    <link href="/dosmith/page/susy/css/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/dosmith/page/susy/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="/dosmith/page/susy/plots.html">Work </a>
+	</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="/dosmith/page/susy/plots.html">AlphaT</a></li>
+	    <li><a href="/dosmith/page/GCT/main">GCT</a></li>
+	    <li><a href="/dosmith/page/HCal/main">HCAL</a></li>
+	    <li><a href="/dosmith/page/susy/bin/settings.html">Settings</a></li>
+	    <li><a href="/dosmith/page/home/home.php">Profile</a></li>
+	    <li><a href="mailto:dosmith@cern.ch">Contact</a></li>
+	  </ul>
+	  <form class="navbar-form navbar-right">
+	    <input type="text" class="form-control" placeholder="Search...">
+	  </form>
+	</div>
+      </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+      <div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+	  <ul class="nav nav-pills nav-stacked">
+	    <li><a href="#Overview">Overview <span class="sr-only">(current)</span></a></li>
+	    <li><a href="https://github.com/CMSRA1/">GitHub</a></li>
+	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
+	  </ul>
+	  <ul class="nav nav-sidebar">
+	    <br>
+	    <h3>AlphaT</h3>
+	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation" id="sidebar">Cross Section corrections</a></li>
+	    
+	    <li>
+	      <div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		  Distributions
+		  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#Signal">Signal</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SingleMu/SingleMuPlots.html">Single Muon</a></li>
+		  
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleMu/DoubleMuPlots.html">Double Muon</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePhoPlots.html">Single Photon</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePlots.html">Single Electron</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleEle/DoubleElePlots.html">Double Electron</a></li>
+		</ul>
+	      </div>
+	    </li>
+
+
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Jet Substructure
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1bbbb/SMS_T1bbbb.html">SMS_T1bbbb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1qqqq/SMS_T1qqqq.html">SMS_T1qqqq_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1tttt/SMS_T1tttt.html">SMS_T1tttt_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2bb/SMS_T2bb.html">SMS_T2bb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2qq/SMS_T2qq.html">SMS_T2qq</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2tt/SMS_T2tt.html">SMS_T2tt</a></li>
+                </ul>
+              </div>
+
+
+	      <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Key distributions
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/Signal/Signal.html">Signal</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleMu/SingleMu.html">SingleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleMu/DoubleMu.html">DoubleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleEle/SingleEle.html">SingleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleEle/DoubleEle.html">DoubleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SinglePhoton/SinglePhoton.html">SinglePhoton</a></li>
+                </ul>
+              </div>
+	    <li><a href="/dosmith/page/susy/Data/Data" id="sidebar">Data</a></li>	      
+	    <li><a href="/dosmith/page/susy/AlphaTwirl/AlphaTwirl" id="sidebar">AlphaTwirl</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaProcess/AlphaProcess" id="sidebar">AlphaProcess</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaTools/AlphaTools" id="sidebar">AlphaTools</a></li>
+	    <li><a href="/dosmith/page/susy/PHYS14/PHYS14.html" id="sidebar">PHYS14 Datasets</a></li>
+	    <li><a href="/dosmith/page/susy/Spring15/Spring15.html" id="sidebar">Spring15 Datasets</a></li>
+	    <br>
+	    <br>
+	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts" id="sidebar1">My Framework</a></li>
+	    <br>
+	    <br>
+	  </ul>
+	  <div>
+	    <h1>Dom Smith</h1>
+	    <p class="lead">University of Bristol</p>
+	    <p class="lead">Vrije Universiteit Brussel </p>
+	    <a href="mailto:dosmith@cern.ch" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> </a>
+	  </div>
+	</div>
+
+	
+<!-- Begin main body -->
+	
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+
+
+	  <!-- Overview -->
+	  <section id="Overview">
+	    <div class="page-head">
+	      <h1> AlphaTwirl </h1>
+	      <p> Instructions and documentation of AlphaTwirl </p>
+	      <p>If you need to copy flat trees from one site to another please see <a href="/dosmith/page/susy/AlphaProcess/AlphaProcess"> AlphaProcess </a> for more info </p>
+	      <a href="https://github.com/cmsra1/alphaTwirl">GitHub </a>
+	      <hr>
+	      <p><b> Cells ordered in date - oldest to newest</b></p>
+	      <h3 id="Region">Distributions </h3>
+	      <h5><u>SingleMu </u> </h5>
+	      <div class="btn-group" role="group" aria-label="...">
+		<button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_22_07_15/web_SingleMu.php"id="figLabel">20150720_Data/20150720_SingleMu_Data <br> 20150713_MC/20150713_SingleMu </a></button>
+		<button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_27_07_15/web_20150724_02_DataMc_SingleMu.php"id="figLabel">20150727_Data/20150727_SingleMu_Data <br> 20150720_MC/20150720_SingleMu </a></button>
+		<button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/SingleMu/holder.html#SingleMu"id="figLabel">20150728_Data/20150728_SingleMu_Data <br> 20150720_MC/20150720_SingleMu </a></button>
+		<button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/SingleMu/holder.html#SingleMu"id="figLabel">20150728_Data/20150728_SingleMu_Data <br> 20150720_MC/20150720_SingleMu </a></button>
+	      </div>
+
+	      <!--- Signal
+		    ---> 
+	      <h5><u>Signal </u> </h5>
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/Signal/web_20150724_02_DataMc_Signal.php"id="figLabel">20150727_Data/20150727_Signal_Data HTMHT_Run2015B_GoldenJSON <br> 20150720_MC/20150720_Signal  +  PHYS14/20150507_Signal</a></button>   
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/Signal_28_07_15/holder.html#Signal"id="figLabel">20150728_Data/20150728_Signal_Data HTMHT_Run2015B_GoldenJSON <br> 20150720_MC/20150720_Signal  +  PHYS14/20150507_Signal</a></button>   
+	      <button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/Signal/holder.html#Signal"id="figLabel">20150728_Data/20150728_Signal_Data HTMHT_Run2015B_GoldenJSON <br> 20150720_MC/20150720_Signal  +  PHYS14/20150507_Signal</a></button>   
+	    </div>
+
+
+	    <!-- DoubleMu
+		 ---->
+	    <h5><u>DoubleMu </u></h5>
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/DoubleMu/holder.html#DoubleMu"id="figLabel">20150728_Data/20150728_DoubleMu_Data <br> 20150720_MC/20150720_DoubleMu </a></button>   
+	      <button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/DoubleMu/holder.html#DoubleMu"id="figLabel">20150728_Data/20150728_DoubleMu_Data <br> 20150720_MC/20150720_DoubleMu </a></button>   
+
+
+	    <!-- SingleEle
+		 ---->
+	    <h5><u>SingleEle </u></h5>
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/SingleEle/holder.html#SingleEle"id="figLabel">20150728_Data/20150728_SingleEle_Data <br> 20150720_MC/20150720_SingleEle </a></button> 
+	      <button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/SingleEle/holder.html#SingleEle"id="figLabel">20150728_Data/20150728_SingleEle_Data <br> 20150720_MC/20150720_SingleEle </a></button> 
+
+
+	      <!--- DoubleEle
+		     ----->
+	    <h5><u>DoubleEle </u></h5>
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/DoubleEle/holder.html#DoubleEle"id="figLabel">20150728_Data/20150728_DoubleEle_Data <br> 20150720_MC/20150720_DoubleEle </a>   </button> 
+	      <button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/DoubleEle/holder.html#DoubleEle"id="figLabel">20150728_Data/20150728_DoubleEle_Data <br> 20150720_MC/20150720_DoubleEle </a>   </button> 
+
+              <!--- SinglePhoton                                                                                                                                                                               
+                    --->                                                                                                                                                                                        
+            <h5><u>SinglePhoton </u></h5>                                                                                                                                                                      
+	      <button type="button" class="btn btn-default" id="buttonLatest"><a href="/dosmith/page/susy/AlphaTwirl/figs_28_07_15/SinglePho/holder.html#SinglePhoton"id="figLabel">20150728_Data/20150728_SinglePho_Data <br> 20150720_MC/20150720_SinglePho </a>   </button> 
+	      <button type="button" class="btn btn-default"><a href="/dosmith/page/susy/AlphaTwirl/figs_30_07_15/SinglePho/holder.html#SinglePhoton"id="figLabel">20150728_Data/20150728_SinglePho_Data <br> 20150720_MC/20150720_SinglePho </a>   </button> 
+
+
+	    <hr>
+
+	    <section id="Instructions">
+	    <h2> Instructions </h2>
+
+	    <!--- On lxplus 
+		  ---->
+
+	    <h3> On lxplus </h3>
+	    <p> Requires CMSSW to retrieve latest version of python and <a href="#installingR">installation </a> of several R packages </p>
+            <li class="list-group-item" id="shell"> 
+	      cmsrel CMSSW_7_5_0
+	      <br><br>
+	      cd CMSSW_7_5_0/src
+	      <br><br>
+	      cmsenv
+	      <br><br>
+	      git clone -b v0.6.0 git@github.com:CMSRA1/AlphaTwirl.git
+	      <br><br>
+	      git clone -b dev-ops git@github.com:CMSRA1/alphat-scripts.git scripts
+	      <br><br>
+	      source scripts/setup.sh
+	      <br><br>
+	      git clone -b v0.1.1 git@github.com:TaiSakuma/mianRs.git
+	    </li>
+	    <br>
+	    <p><b>Edit ./scripts/print_commands.sh </b></p>
+	    <p><b>If you used <a href="/dosmith/page/susy/AlphaProcess/AlphaProcess"> AlphaProcess </a> to transfer the trees, then please use the destination directory of the copy here </b> </p>
+	    <li class="list-group-item" id="command">
+               heppy_Data_topdir=/afs/cern.ch/work/d/dosmith/public/alphat/RA1/74X/Data/20150720_Data/20150720_SingleMu_Data
+	       <br><br>
+	       heppy_mc_Spring15_topdir=/afs/cern.ch/work/d/dosmith/public/alphat/RA1/74X/MC/20150713_MC/20150713_SingleMu
+	       <br><br>
+	       # For better management 
+	       <br><br>
+	       tbl_topdir_datamc=./tbl_ <i> date </i>
+	       <br><br>
+	       tbl_topdir_data=./tbl_ <i> date</i>
+	       <br><br>
+	       tbl_topdir_mc=./tbl_ <i> date </i>
+	       <br><br>
+	       fig_topdir=./fig_<i> date</i>
+	       <br><br>
+	       webpage_pre=./web_ <i>date</i>_DataMc
+
+	    </li>
+	    <br>
+	    <p><b>To produce distributions</b> </p>
+	    <li class="list-group-item" id="shell">
+	      ./scripts/print_commands.sh
+	      <br><br>
+	      ./scripts/print_commands.sh | sh -x
+            </li>                                                                                                                                                                                               
+            <br>          
+
+
+	    <!--- On Imnperial
+		  --->
+
+	    <hr>
+	    <h3> On Imperial </h3>
+            <li class="list-group-item" id="shell"> 
+	      source /vols/cms/grid/setup.sh
+	      <br><br>
+	      export SCRAM_ARCH=slc6_amd64_gcc491
+	      <br><br>
+	      cmsrel CMSSW_7_5_0
+	      <br><br>
+	      cd CMSSW_7_5_0/src
+	      <br><br>
+	      cmsenv
+	      <br><br>
+	      git clone -b v0.6.0 git@github.com:CMSRA1/AlphaTwirl.git
+	      <br><br>
+	      git clone -b dev-ops git@github.com:CMSRA1/alphat-scripts.git scripts
+	      <br><br>
+	      source scripts/setup.sh
+	      <br><br>
+	      git clone -b v0.1.1 git@github.com:TaiSakuma/mianRs.git
+	      <br><br>
+	      export PATH=/vols/cms04/RA1/local/bin:$PATH                        # Adding R packages path
+	    </li>
+	    <br>
+	    <p><b>Edit ./scripts/print_commands.sh to change</b> </p>
+	    <li class="list-group-item" id="command">
+               heppy_Data_topdir=/vols/cms04/RA1/74X/Data/20150720_Data
+	       <br><br>
+	       heppy_mc_Spring15_topdir=/vols/cms04/RA1/74X/MC/20150713_MC
+	       <br><br>
+	       tbl_topdir_datamc=./tbl_ <i> date </i>
+	       <br><br>
+	       tbl_topdir_data=./tbl_ <i> date</i>
+	       <br><br>
+	       tbl_topdir_mc=./tbl_ <i> date </i>
+	       <br><br>
+	       fig_topdir=./fig_<i> date</i>
+	       <br><br>
+	       webpage_pre=./web_ <i>date</i>_DataMc
+	    </li>
+	    <br>
+	    <p><b>To produce distributions</b> </p>
+	    <li class="list-group-item" id="shell">
+	      ./scripts/print_commands.sh
+	      <br><br>
+	      ./scripts/print_commands.sh | sh -x
+            </li>                                                                                                                                                                                               
+            <br>          
+	    <hr>
+	    
+	    <!--- On Bristol
+		  --->
+
+	    <h3> On Bristol - FIXME </h3>
+            <li class="list-group-item" id="shell"> 
+	      ./cvmfs/cms.cern.ch/cmsset_default.sh
+	      <br><br>
+	      export SCRAM_ARCH=slc6_amd64_gcc491
+	      <br><br>
+	      cmsrel CMSSW_7_5_0
+	      <br><br>
+	      cd CMSSW_7_5_0/src
+	      <br><br>
+	      cmsenv  # Only if R Packages installed
+	      <br><br>
+	      git clone -b v0.6.0 git@github.com:CMSRA1/AlphaTwirl.git
+	      <br><br>
+	      git clone -b dev-ops git@github.com:CMSRA1/alphat-scripts.git scripts
+	      <br><br>
+	      source scripts/setup.sh
+	      <br><br>
+	      git clone -b v0.1.1 git@github.com:TaiSakuma/mianRs.git
+	      <br><br>
+	      export PATH=/software/miniconda/bin:$PATH      # Adding R packages path
+	    </li>
+	    <br>
+	    <p><b>If R packages are not installed yet please follow the instructions <a href="#installingR">below </a> </b></p>
+	    <p><b>Edit ./scripts/print_commands.sh to change</b> </p>
+	    <li class="list-group-item" id="command">
+               heppy_Data_topdir=/hdfs/SUSY/RA1/74X/Data/20150720_Data
+	       <br><br>
+	       heppy_mc_Spring15_topdir=/hdfs/SUSY/RA1/74X/MC/20150713_MC
+	    </li>
+	    <br>
+	    <p><b>To produce distributions</b> </p>
+	    <li class="list-group-item" id="shell">
+	      ./scripts/print_commands.sh
+	      <br><br>
+	      ./scripts/print_commands.sh | sh -x
+            </li>                                                                                                                                                                                               
+            <br>          
+	    <br>
+	    <br>
+	    <hr><hr>
+	    
+	  </section>
+	  
+	  <!-- Installing R
+	       ========================-->
+	  <section id="installingR">
+	    <div class="page-head">
+	      <h3> Installing R packages on your host </h3>
+	      <p><b> Requires an unsourced cms environment </b></p>
+            <li class="list-group-item" id="shell"> 
+	      R
+	      <br><br>
+	      install.packages("dplyr")
+	      <br><br>
+	      install.packages("tidyr")
+	      <br><br>
+	      install.packages("gdata")
+	      <br><br>
+	      install.packages("lattice")
+	      <br><br>
+	      install.packages("latticeExtra")
+	      <br><br>
+	      install.packages("RColorBrewer")
+	      <br><br>
+	      install.packages("methods")
+	      <br><br>
+	      install.packages("vcd")
+	      <br><br>
+	      install.packages("colorspace")
+	      <br><br>
+	      install.packages("ggplot2")
+	      <br><br>
+	      install.packages("devtools")
+	      <br><br>
+	      install.packages("roxygen2")
+	      <br><br>
+	      q()
+	      <br><br>
+	      R --slave -e 'devtools::install_github("TaiSakuma/latticelog")'
+	      <br><br>
+	    </li>
+	      
+
+	    </div>
+	  </section>
+
+
+
+	  
+	 
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+	     ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/widgets.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+	<script src="../../assets/js/vendor/holder.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	
+  </body>
+</html>
+
+
+

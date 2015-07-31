@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SUSY AlphaT</title>
+    <link rel="shortcut icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/dosmith/page/images/favicon.ico" type="image/x-icon">
+
+    
+    <!-- Bootstrap core CSS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">     
+    <link href="/dosmith/page/susy/css/styles.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/dosmith/page/susy/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="/dosmith/page/susy/plots.html">Work </a>
+	</div>
+	<div id="navbar" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="/dosmith/page/susy/plots.html">AlphaT</a></li>
+	    <li><a href="/dosmith/page/GCT/main">GCT</a></li>
+	    <li><a href="/dosmith/page/HCal/main">HCAL</a></li>
+	    <li><a href="/dosmith/page/susy/bin/settings.html">Settings</a></li>
+	    <li><a href="/dosmith/page/home.php">Profile</a></li>
+	    <li><a href="mailto:dosmith@cern.ch">Contact</a></li>
+	  </ul>
+	  <form class="navbar-form navbar-right">
+	    <input type="text" class="form-control" placeholder="Search...">
+	  </form>
+	</div>
+      </div>
+    </nav>
+
+    
+    <div class="container-fluid">
+      <div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+	  <ul class="nav nav-pills nav-stacked">
+	    <li><a href="#Overview">Overview <span class="sr-only">(current)</span></a></li>
+	    <li><a href="https://github.com/CMSRA1/">GitHub</a></li>
+	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
+	  </ul>
+	  <ul class="nav nav-sidebar">
+	    <br>
+	    <h3>AlphaT</h3>
+	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation" id="sidebar">Cross Section corrections</a></li>
+	    
+	    <li>
+	      <div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+		  Distributions
+		  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#Signal">Signal</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SingleMu/SingleMuPlots.html">Single Muon</a></li>
+		  
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleMu/DoubleMuPlots.html">Double Muon</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePhoPlots.html">Single Photon</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/SinglePho/SinglePlots.html">Single Electron</a></li>
+
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/ControlRegions/DoubleEle/DoubleElePlots.html">Double Electron</a></li>
+		</ul>
+	      </div>
+	    </li>
+
+
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Jet Substructure
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1bbbb/SMS_T1bbbb.html">SMS_T1bbbb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1qqqq/SMS_T1qqqq.html">SMS_T1qqqq_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1tttt/SMS_T1tttt.html">SMS_T1tttt_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2bb/SMS_T2bb.html">SMS_T2bb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2qq/SMS_T2qq.html">SMS_T2qq</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2tt/SMS_T2tt.html">SMS_T2tt</a></li>
+                </ul>
+              </div>
+
+
+	      <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Key distributions
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/Signal/Signal.html">Signal</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleMu/SingleMu.html">SingleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleMu/DoubleMu.html">DoubleMu</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SingleEle/SingleEle.html">SingleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/DoubleEle/DoubleEle.html">DoubleElectron</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/General/SinglePhoton/SinglePhoton.html">SinglePhoton</a></li>
+                </ul>
+              </div>
+	    <li><a href="/dosmith/page/susy/Data/Data" id="sidebar">Data</a></li>	      
+	    <li><a href="/dosmith/page/susy/AlphaTwirl/AlphaTwirl" id="sidebar">AlphaTwirl</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaProcess/AlphaProcess" id="sidebar">AlphaProcess</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaTools/AlphaTools" id="sidebar">AlphaTools</a></li>
+	    <li><a href="/dosmith/page/susy/PHYS14/PHYS14.html" id="sidebar">PHYS14 Datasets</a></li>
+	    <li><a href="/dosmith/page/susy/Spring15/Spring15.html" id="sidebar">Spring15 Datasets</a></li>
+	    <br>
+	    <br>
+	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts" id="sidebar1">My Framework</a></li>
+	    <br>
+	    <br>
+	  </ul>
+	  <div>
+	    <h1>Dom Smith</h1>
+	    <p class="lead">University of Bristol</p>
+	    <p class="lead">Vrije Universiteit Brussel </p>
+	    <a href="mailto:dosmith@cern.ch" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> </a>
+	  </div>
+	</div>
+
+	
+<!-- Begin main body -->
+	
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+
+
+	  <!-- Overview -->
+	  <section id="Overview">
+	    <div class="page-head">
+	      <h1> AlphaProcess </h1>
+	      <p> Management of flat trees across different sites </p>
+	      <li><a href="https://github.com/CMSRA1/AlphaProcess/tree/v0.0.x">GitHub </a> </li>
+	      <li> <a href="/dosmith/page/susy/AlphaProcess/Bugs">Bug Database </a> </li>
+	    </div>
+	    <hr>
+	    <h4> Anywhere </h4>
+
+            <li class="list-group-item" id="shell"> 
+	      git clone -b v0.0.x git@github.com:CMSRA1/AlphaProcess.git
+	      <br><br>
+	      cd AlphaProcess/python
+	    </li>
+	    <br>
+	    <p><b>Include your usernames for the different hosts in usr/users.json</b></p>
+            <li class="list-group-item" id="command">
+	      {
+	      "host" : "user"
+}
+	      </li>
+            <br>            
+	    <p><b>Where host is Imperial, Bristol or Cern and username is your corresponding username</b></p>
+	    <br>
+	    <p><b>Edit dataLists/lists.txt to include a list of flat trees to copy </b> </p>
+	    <p><b>(Make sure the destination directory exists (for now) ) </b> </p>
+	    <li class="list-group-item" id="command">
+	      RA1/74X/Data//20150710_Data/20150710_DoubleEle_Data/
+	      <br><br>
+	      RA1/74X/MC//20150710_Data/20150710_DoubleEle_Data/
+	    </li>
+	    <br>
+	    <p><b>To copy flat trees </b> </p>
+	    <li class="list-group-item" id="shell">
+	      ./copyTrees.py --from-site <i> source </i> --to-site <i> destination </i>
+            </li>                                                                                                                                                                                              
+            <br>          
+	    <p><b>Run output script </b> </p>
+	    <li class="list-group-item" id="shell">                                                                                                                                                                      
+	      source treeList.sh
+	      </li>
+
+	    <br>
+	    <br>
+	    <hr>
+
+	    <h3>Copying to lxplus example </h3>
+	    <p> <b>At this point usr/user.json should look like this: </b> </p>
+	    <li class="list-group-item" id="command">                                                                                                                                                                                                                                                                                   { <br>
+	      "cern": "my cern username", <br>
+	      "bristol": "my bristol username", <br>
+	      "imperial": "my imperial username" <br>
+	      }
+	      </li>
+	    <br>
+	    <br>
+	    <p><b>And lists dataLists/list.txt should look like this: </b></p>
+	    <li class="list-group-item" id="command">           
+	    RA1/74X/Data//20150710_Data/20150710_DoubleEle_Data/                                                                                                                                                                                                                                                         
+              <br><br>                                                                                                                                                                                                                                                                                                    
+              RA1/74X/MC//20150710_Data/20150710_DoubleEle_Data/                                                                                                                                                                                                                                                                       </li>                           
+	    <br>
+	    <br>
+	    <p><b>Execute script </b></p>
+	    <li class="list-group-item" id="shell">
+	      ./copyTrees.py --from-site imperial --to-site cern
+            </li>                                                                                                                                                                                              
+            <br>          
+	    <br>
+	    <p><b>The output shell script treeList.sh will look like this (notice the necessary rsync commands have been included) </b></p>
+	    <li class="list-group-item" id="command">                                                                                                                                                                                                                                                                     
+              rsync -av --compress-level=9 --exclude=Chunks <i>ICUserName</i>@lx03.hep.ph.ic.ac.uk:/vols/cms04/RA1/74X/Data//20150720_Data/20150720_SingleMu_Data/ /afs/cern.ch/work/b/bob/public/alphat/RA1/74X/Data//20150720_Data/20150720_SingleMu_Data/
+              <br><br>                                                                                                                                                                                                                                                                                                    
+	      rsync -av --compress-level=9 --exclude=Chunks <i>ICUserName</i>@lx03.hep.ph.ic.ac.uk:/vols/cms04/RA1/74X/MC/20150713_MC/20150713_SingleMu/ /afs/cern.ch/work/b/bob/public/alphat/RA1/74X/MC/20150713_MC/20150713_SingleMu/
+            </li>                                                    
+	    <br>
+	    <br>
+	    <p><b>Once you are happy with the collection of trees you want copied, execute the script</b></p>
+	    <p><b>Be careful with the directory structure of the destination (for now) </p></b>
+	    <li class="list-group-item" id="shell">                                                                                                                                                                                                                                                                      
+	      source treeList.sh
+            </li>                                                        
+	    <br>
+	    <br>
+	    <p><b>If you don't have a ssh-key setup then you will need to input your password </b></p>
+	    <p><b>rsync is smart enough to know if the data is already present by investigating the byte size.
+		<br> If the data is already there, it won't perform the synchronisation. However, if the content were to change then rsync will copy only the difference </b></p>
+
+	    <li class="list-group-item" id="command">                                                                                                                                                                                                                                                                     
+	      sent 57 bytes  received 2192 bytes  499.78 bytes/sec
+	      <br>
+	      total size is 2294771  speedup is 1020.35
+	    </li>
+	    <br>
+	    <br>
+	    <p><b> Now you can make your distributions in <a href="/dosmith/page/susy/AlphaTwirl/AlphaTwirl"> AlphaTwirl </a> </b></p>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+
+	  </section>
+	  
+	  <!-- Basic Distributions
+	    ==========================-->
+	  <!-- Signal
+	       ========================-->
+	  <section id="Signal">
+	    <div class="page-head">
+	    </div>
+	  </section>
+
+
+
+	  
+	 
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+	     ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/widgets.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+	<script src="../../assets/js/vendor/holder.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+	
+  </body>
+</html>
