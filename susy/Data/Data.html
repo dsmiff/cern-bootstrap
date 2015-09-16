@@ -52,8 +52,8 @@
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><a href="#">Dashboard</a></li>
 	    <li><a href="#">Settings</a></li>
-	    <li><a href="/dosmith/page/home.php">Profile</a></li>
-	    <li><a href="/dosmith/page/susy/plots.html#contact">Contact</a></li>
+	    <li><a href="/dosmith/page/home/home.php">Profile</a></li>
+	    <li><a href="/dosmith/page/susy/page/Contact.html">Contact</a></li>
 	  </ul>
 	  <form class="navbar-form navbar-right">
 	    <input type="text" class="form-control" placeholder="Search...">
@@ -72,8 +72,9 @@
 	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
 	  </ul>
 	  <ul class="nav nav-sidebar">
+	    <br>
 	    <h3>AlphaT</h3>
-	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation">Cross Section corrections</a></li>
+	    <li><a href="/dosmith/page/susy/plots.html#BinnedMCSamplesXSInvestigation" id="sidebar">Cross Section corrections</a></li>
 	    
 	    <li>
 	      <!-- Dropdown
@@ -95,7 +96,21 @@
 
 	    </li>
 
-	    <li><a href="/dosmith/page/susy/JetSubstructure/JetSub.html">Jet Substructure</a></li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Jet Substructure
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1bbbb/SMS_T1bbbb.html">SMS_T1bbbb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1qqqq/SMS_T1qqqq.html">SMS_T1qqqq_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T1tttt/SMS_T1tttt.html">SMS_T1tttt_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2bb/SMS_T2bb.html">SMS_T2bb_2J</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2qq/SMS_T2qq.html">SMS_T2qq</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/dosmith/page/susy/JetSubstructure/Scans/SMS_T2tt/SMS_T2tt.html">SMS_T2tt</a></li>
+                </ul>
+              </div>
+
 
 	      <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -114,13 +129,16 @@
 
 
 
+	    <li><a href="/dosmith/page/susy/Data/Data.html" id="sidebar">Data</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaTwirl/AlphaTwirl" id="sidebar">AlphaTwirl</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaProcess/AlphaProcess" id="sidebar">AlphaProcess</a></li>
+	    <li><a href="/dosmith/page/susy/AlphaTools/AlphaTools" id="sidebar">AlphaTools</a></li>
+	    <li><a href="/dosmith/page/susy/PHYS14/PHYS14.html" id="sidebar">PHYS14 Datasets</a></li>
+	    <li><a href="/dosmith/page/susy/Spring15/Spring15.html" id="sidebar">Spring15 Datasets </a></li>
 
-	    <li><a href="/dosmith/page/susy/PHYS14/PHYS14.html">PHYS14 Datasets</a></li>
-	    <li><a href="/dosmith/page/susy/Spring15/Spring15.html">Spring15 Datasets </a></li>
-	    <li><a href="/dosmith/page/susy/Data/Data.html">Data</a></li>
 	    <br>
 	    <br>
-	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts">My Framework</a></li>
+	    <li><a href="https://github.com/dsmiff/AlphaTools/tree/alphaTwirl/scripts" id="sidebar1">My Framework</a></li>
 	    <br>
 	    <br>
 	  </ul>
@@ -142,7 +160,8 @@
 	  <section id="Overview">
 	    <div class="page-head">
 	      <h1> Run II 13 TeV Distributions </h1>
-	      <p> A collection of distributions of the analysis variables on Certified Commisioning Runs </P>
+	      <p>Please see <a href="/dosmith/page/susy/AlphaTwirl/AlphaTwirl.html"> AlphaTwirl </a> more Data MC comparisons</p>
+	      <p> A collection of distributions of the analysis variables on Certified Commisioning Runs </p>
 	      <li><a href="https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions15/13TeV/"> Certified Run list </a></li>
 	      <li><a href="https://cmsweb-testbed.cern.ch/confdb/"> HLT Paths </a></li>
 	    </div>

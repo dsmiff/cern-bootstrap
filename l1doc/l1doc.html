@@ -50,7 +50,7 @@
 	<div id="navbar" class="navbar-collapse collapse">
 	  <ul class="nav navbar-nav navbar-right">
 	    <li><a href="/dosmith/page/susy/plots.html">AlphaT</a></li>
-	    <li><a href="/dosmith/page/GCT/main.html">GCT</a></li>
+	    <li><a href="/dosmith/page/GCT/main.html">Trigger</a></li>
 	    <li><a href="/dosmith/page/susy/bin/settings.html">Settings</a></li>
 	    <li><a href="/dosmith/page/home.php">Profile</a></li>
 	    <li><a href="mailto:dosmith@cern.ch">Contact</a><li>
@@ -68,7 +68,7 @@
 	<div class="col-sm-3 col-md-2 sidebar">
 	  <ul class="nav nav-pills nav-stacked">
 	    <li><a href="/dosmith/page/susy/plots.html">Overview <span class="sr-only">(current)</span></a></li>
-	    <li><a href="https://github.com/CMSRA1/">GitHub</a></li>
+	    <li><a href="https://github.com/dsmiff/">GitHub</a></li>
 	    <li><a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/Alpha">TWiki</a></li>
 	    <br>
 	    <br>
@@ -99,12 +99,14 @@
 	      <dl>
 	      <dt><a href="http://schwick.web.cern.ch/schwick/dailyReport/listReports/">Daily Reports </a>
 		<dd><i>CMS Run Coordination Meeting </i>
-	      <dt><a href="https://www.google.com/calendar/embed?src=7k62poafqid4t49oakia0rp4ug%40group.calendar.google.com&ctz=Europe/Zurich%22%20style=%22border:%200%22%20width=%22800%22%20height=%22600%22%20frameborder=%220%22%20scrolling=%22no%22">Run Schedule</a>
-		<dd><i>CMS Run Schedule Calender </i>
-	      <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/Run2CMScommissioning">Run II Commissioning</a>
-		<dd><i>Commissioning Timeline </i>
-		  <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/TcdsNotes">TCDS Notes </a>
-		    <dd><i>TCDS Notes, B-Go sequences, Database Recrods </i>
+		  <dt><a href="https://www.google.com/calendar/embed?src=7k62poafqid4t49oakia0rp4ug%40group.calendar.google.com&ctz=Europe/Zurich%22%20style=%22border:%200%22%20width=%22800%22%20height=%22600%22%20frameborder=%220%22%20scrolling=%22no%22">Run Schedule</a>
+		    <dd><i>CMS Run Schedule </i>
+		      <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWB">Run II Commissioning Online WB</a>
+			<dd><i>CMS Daily Run Meeting Twiki </i>
+			  <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/Run2CMScommissioning">Run II Commissioning</a>
+			    <dd><i>Commissioning Timeline </i>
+			      <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/TcdsNotes">TCDS Notes </a>
+				<dd><i>TCDS Notes, B-Go sequences, Database Recrods </i>
 	      </dl>
 	      <hr>
 	      <h4> Diagnostic Tools </h4>
@@ -121,12 +123,47 @@
 		<dd><i> DAQ Rates Shifter Page </i></dd>
 	      <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/DQMShiftTriggerEmulator">DQM Data/Emulator Guide</a>
 		<dd><i> L1 Online DQM Emuator vs Data guide </i>
-	      </dl>
+	      <dt><a href="https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWBL1OnlineIssues">Known Trigger Issues</a>
+		<dd><i> Trigger Operation: Known Issues </i>
+	      <dt><a href="http://op-webtools.web.cern.ch/op-webtools/vistar/vistars.php?usr=LHC1">LHC</a>
+		<dd><i>LHC Operattion News </i>
+		  
 
+	      </dl>
 	    </div>
 	    <hr>
 	  </section>
 	</div>
+
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+	  <section id="Preample">
+	    <h2>Guide</h2>
+	    <p> HCal has two L1 Keys, 1 for the magnet at 3.8T and the other for 0T. If the magnet changes state, need to confirm with the HCal DOC that this change of key is okay and change the TSC keys and l1-hlt respectively. 
+	      <br>
+	      The <b>L1_HLT</b> key contains 3 subkeys: <br>
+	      <li><b>TSC Key </b> : Steers most static configuration parameters of the trigger system hardware and software </li> 
+	      <li><b>GT Run Settings Key </b> : Enables/ disables trigger bits and sets prescale factors </li> 
+	      <li><b>HLT Key </b> : Sets the HLT parameters, paths and prescale factors </li> 
+	      <br>
+	      To update the L1 and HLT keys together follow this <a href="https://twiki.cern.ch/twiki/bin/view/CMS/OnlineWBHowToUpdateL1HLTKeys"> link. </a>
+	      <br>
+	      The list on Trigger Modes can be found <a href="https://cmswbm.web.cern.ch/cmswbm/cmsdb/servlet/TriggerMode"> here. </a>
+	      <br>
+	      <br>
+	      The <b>HLT </b> key is usually provided by the HLT DOC. The others, <b>TSC_KEY </b> and <b> GT_RS_KEY </b> can be modified <a href="http://l1page.cms/main/DBGui"> here </a> with <a href="https://twiki.cern.ch/twiki/bin/view/CMS/TriggerShifterGuideConfiguration#DB_GUI"> instructions. </a> 
+	      and <a href="https://twiki.cern.ch/twiki/bin/view/CMS/TriggerFieldManagerGuide#Enable_or_disable_L1_bits_for_tr"> here. </a>
+	    </p>
+	  </section>
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+	  <section id="Figures">
+	    <h2>50ns Filling Scheme</h2>
+	    <p> The spacing between the bunches is 50ns. The structure of the bunches is visible within the train </p>
+	    <img src="50nsFilling.png">
+	  </section>
+	</div>
+
 
 
 <!-- Bootstrap core JavaScript
